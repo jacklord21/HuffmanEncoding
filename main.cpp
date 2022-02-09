@@ -13,7 +13,7 @@ int main() {
     start();
 }
 
-[[noreturn]] void start() {
+void start() {
 
     int choice=0;
     vector<int> choices = {0, 1, 2, 3, 4};
