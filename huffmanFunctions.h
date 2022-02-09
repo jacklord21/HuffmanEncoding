@@ -2,8 +2,8 @@
 // Created by Leira on 22/12/2021.
 //
 
-#ifndef FIRSTC___HUFFMANFUNCTIONS_H
-#define FIRSTC___HUFFMANFUNCTIONS_H
+#ifndef HuffmanEncoding_HUFFMANFUNCTIONS_H
+#define HuffmanEncoding_HUFFMANFUNCTIONS_H
 
 #define NUM_MAX_CARATTERI 128
 
@@ -37,4 +37,4 @@ int getSentenceDimBefore();
 
 //string switchStringToPrint(int i);
 
-#endif //FIRSTC___HUFFMANFUNCTIONS_H
+#endif //HuffmanEncoding_HUFFMANFUNCTIONS_H
