@@ -21,17 +21,13 @@ void acquire(const string& flag) {
         cout << "Insert sentence: "; cin.ignore(); getline(cin, frase);
     }
     else if(flag=="file") {
-        string path;
-        char* buffer = (char*)malloc(sizeof(char)*1024);
+        cout << "Insert file path: ";
+        cin >> frase;
 
-        cout << "Insert file path: "; //cin.ignore(); getline(cin, path);
-        cin >> path;
-
-
-        FILE* file = fopen(path.c_str(), "r");
-        while(fread(buffer, sizeof(char), 1024, file)!=0)
-            frase+=buffer;
-        fclose(file);
+        ifstream inf(frase);
+        stringstream ss; ss << inf.rdbuf();
+        frase = ss.str();
+        inf.close();
     }
 
     countOccurrences(frase); cout << "\n\nINFO] Occurrences correctly counted." << endl;
