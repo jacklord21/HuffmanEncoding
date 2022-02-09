@@ -1,0 +1,1 @@
+/usr/bin/c++.exe --coverage -g -Wl,--enable-auto-import CMakeFiles/FirstC__.dir/main.cpp.o CMakeFiles/FirstC__.dir/huffmanFunctions.cpp.o -o FirstC__.exe -Wl,--out-implib,libFirstC__.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

@@ -1,0 +1,9 @@
+'s'	:2	00
+'d'	:1	010
+'c'	:2	011
+'a'	:3	10
+'i'	:2	110
+'o'	:2	111
+
+Dimensione prima della codifica (numero di bit): 96
+Dimensione in bit dopo della codifica (numero di bit): 31
