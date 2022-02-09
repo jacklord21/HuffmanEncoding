@@ -3,8 +3,6 @@
 #include <algorithm>
 #include "huffmanFunctions.h"
 
-using namespace std;
-
 [[noreturn]] void start();
 void printMenu();
 void switchChoice(int);

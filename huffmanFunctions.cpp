@@ -6,8 +6,6 @@
 #include <sstream>
 #include "huffmanFunctions.h"
 
-using namespace std;
-
 Occurrence** onlyFoundOccurrencesVet;
 Occurrence* allPossibleOccurrencesVet[NUM_MAX_CARATTERI] = {};
 int onlyFoundOccurrencesDim;
