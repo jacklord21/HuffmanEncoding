@@ -1,7 +1,6 @@
+#include <vector>
 #include <iostream>
 #include <algorithm>
-#include <vector>
-#include <fstream>
 #include "huffmanFunctions.h"
 
 using namespace std;
@@ -11,38 +10,7 @@ void printMenu();
 void switchChoice(int);
 
 int main() {
-
     start();
-/*    string path = "";
-
-
-
-  //  string path = "G:/Il mio Drive/Portatile/File e documenti/file/txt/expressvpn.txt";
-    string frase = "ciao a tutti";
-    frase = "Se qualcuno lo facesse ma non fosse sicuro sarebbe meglio farlo per sicurezza o non farlo per insicurezza";
- //   frase = "ciao sono mario rossi   ";
-
-    string fileText, temp;
-    ifstream inf(path, ios::in);;
-
-    if(inf.is_open()) {
-        cout << "FILE OPENED" << endl;
-        while(getline(inf, temp)) {
-            fileText += temp;
-            fileText.push_back('\n');
-        }
-    }
-    else cout << "FILE NOT OPENED";
-
-//    cout << fileText;
-
-    cout << "SOMMA OCCORRENZE PRIMA: " << frase.size()*8 << endl;
-    countOccurrences(fileText);
-    createTree();
-    exit(0);
-
-
-  //  start();*/
 }
 
 [[noreturn]] void start() {
