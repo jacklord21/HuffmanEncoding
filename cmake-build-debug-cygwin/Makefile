@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FirstC__
+# Target rules for targets named HuffmanEncoding
 
 # Build rule for target.
-FirstC__: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FirstC__
-.PHONY : FirstC__
+HuffmanEncoding: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HuffmanEncoding
+.PHONY : HuffmanEncoding
 
 # fast build rule for target.
-FirstC__/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/build
-.PHONY : FirstC__/fast
+HuffmanEncoding/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/build
+.PHONY : HuffmanEncoding/fast
 
 huffmanFunctions.o: huffmanFunctions.cpp.o
 .PHONY : huffmanFunctions.o
 
 # target to build an object file
 huffmanFunctions.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/huffmanFunctions.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/huffmanFunctions.cpp.o
 .PHONY : huffmanFunctions.cpp.o
 
 huffmanFunctions.i: huffmanFunctions.cpp.i
@@ -142,7 +142,7 @@ huffmanFunctions.i: huffmanFunctions.cpp.i
 
 # target to preprocess a source file
 huffmanFunctions.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/huffmanFunctions.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/huffmanFunctions.cpp.i
 .PHONY : huffmanFunctions.cpp.i
 
 huffmanFunctions.s: huffmanFunctions.cpp.s
@@ -150,7 +150,7 @@ huffmanFunctions.s: huffmanFunctions.cpp.s
 
 # target to generate assembly for a file
 huffmanFunctions.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/huffmanFunctions.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/huffmanFunctions.cpp.s
 .PHONY : huffmanFunctions.cpp.s
 
 main.o: main.cpp.o
@@ -158,7 +158,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -166,7 +166,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -185,7 +185,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... FirstC__"
+	@echo "... HuffmanEncoding"
 	@echo "... huffmanFunctions.o"
 	@echo "... huffmanFunctions.i"
 	@echo "... huffmanFunctions.s"

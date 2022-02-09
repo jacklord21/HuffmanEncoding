@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-b
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/FirstC__.dir/all
+all: CMakeFiles/HuffmanEncoding.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/FirstC__.dir/clean
+clean: CMakeFiles/HuffmanEncoding.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/FirstC__.dir
+# Target rules for target CMakeFiles/HuffmanEncoding.dir
 
 # All Build rule for target.
-CMakeFiles/FirstC__.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin/CMakeFiles --progress-num=1,2,3 "Built target FirstC__"
-.PHONY : CMakeFiles/FirstC__.dir/all
+CMakeFiles/HuffmanEncoding.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin/CMakeFiles --progress-num=1,2,3 "Built target HuffmanEncoding"
+.PHONY : CMakeFiles/HuffmanEncoding.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/FirstC__.dir/rule: cmake_check_build_system
+CMakeFiles/HuffmanEncoding.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FirstC__.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HuffmanEncoding.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin/CMakeFiles 0
-.PHONY : CMakeFiles/FirstC__.dir/rule
+.PHONY : CMakeFiles/HuffmanEncoding.dir/rule
 
 # Convenience name for target.
-FirstC__: CMakeFiles/FirstC__.dir/rule
-.PHONY : FirstC__
+HuffmanEncoding: CMakeFiles/HuffmanEncoding.dir/rule
+.PHONY : HuffmanEncoding
 
 # clean rule for target.
-CMakeFiles/FirstC__.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FirstC__.dir/build.make CMakeFiles/FirstC__.dir/clean
-.PHONY : CMakeFiles/FirstC__.dir/clean
+CMakeFiles/HuffmanEncoding.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HuffmanEncoding.dir/build.make CMakeFiles/HuffmanEncoding.dir/clean
+.PHONY : CMakeFiles/HuffmanEncoding.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

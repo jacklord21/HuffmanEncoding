@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="FirstC__">
-				<Option output="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/FirstC__.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="HuffmanEncoding">
+				<Option output="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/HuffmanEncoding.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -52,14 +52,14 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 FirstC__"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 HuffmanEncoding"/>
 					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="FirstC__/fast">
-				<Option output="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/FirstC__.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="HuffmanEncoding/fast">
+				<Option output="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/HuffmanEncoding.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -73,7 +73,7 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/11/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 FirstC__/fast"/>
+					<Build command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 HuffmanEncoding/fast"/>
 					<CompileFile command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j16 -f &quot;/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/cmake-build-debug-cygwin-coverage/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,13 +81,13 @@
 			</Target>
 		</Build>
 		<Unit filename="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/huffmanFunctions.cpp">
-			<Option target="FirstC__"/>
+			<Option target="HuffmanEncoding"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/huffmanFunctions.h">
-			<Option target="FirstC__"/>
+			<Option target="HuffmanEncoding"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/main.cpp">
-			<Option target="FirstC__"/>
+			<Option target="HuffmanEncoding"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Leira/CLionProjects/HuffmanEncoding/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
