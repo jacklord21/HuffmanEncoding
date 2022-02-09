@@ -1,5 +1,5 @@
 //
-// Created by Leira on 22/12/2021.
+// Created by Giacomo on 22/12/2021.
 //
 
 #ifndef HuffmanEncoding_HUFFMANFUNCTIONS_H
