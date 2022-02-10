@@ -23,6 +23,12 @@ void acquire(const string& flag) {
         cin >> frase;
 
         ifstream inf(frase);
+
+        if(!inf.is_open()) {
+            cout << "ATTENTION: path '" << frase << "' isn't valid.";
+            return;
+        }
+
         stringstream ss; ss << inf.rdbuf();
         frase = ss.str();
         inf.close();
