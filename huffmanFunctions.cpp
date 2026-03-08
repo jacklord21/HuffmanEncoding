@@ -4,11 +4,35 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <limits>
 #include "huffmanFunctions.h"
 
-Occurrence** onlyFoundOccurrencesVet;
+Occurrence** onlyFoundOccurrencesVet = nullptr;
 Occurrence* allPossibleOccurrencesVet[NUM_MAX_CARATTERI] = {};
-int onlyFoundOccurrencesDim;
+int onlyFoundOccurrencesDim = 0;
+
+static void deleteTree(Occurrence* node) {
+    if (node == nullptr) return;
+
+    deleteTree(node->leftSon);
+    deleteTree(node->rightSon);
+    delete node;
+}
+
+static void resetState() {
+    if (onlyFoundOccurrencesVet != nullptr && onlyFoundOccurrencesDim > 0) {
+        deleteTree(onlyFoundOccurrencesVet[onlyFoundOccurrencesDim - 1]);
+        delete[] onlyFoundOccurrencesVet;
+        onlyFoundOccurrencesVet = nullptr;
+    }
+
+    for (auto & i : allPossibleOccurrencesVet) {
+        delete i;
+        i = nullptr;
+    }
+
+    onlyFoundOccurrencesDim = 0;
+}
 
 
 void acquire(const string& flag) {
@@ -16,7 +40,9 @@ void acquire(const string& flag) {
     string frase;
 
     if(flag=="terminal") {
-        cout << "Insert sentence: "; cin.ignore(); getline(cin, frase);
+        cout << "Insert sentence: ";
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        getline(cin, frase);
     }
     else if(flag=="file") {
         cout << "Insert file path: ";
@@ -34,11 +60,17 @@ void acquire(const string& flag) {
         inf.close();
     }
 
+    resetState();
     countOccurrences(frase); cout << "\n\nINFO] Occurrences correctly counted." << endl;
     createTree(); cout << "INFO] Occurrences tree correctly created." << endl;
 }
 
 void printOccurrencesOnTerminal() {
+    if (onlyFoundOccurrencesDim == 0 || onlyFoundOccurrencesVet == nullptr) {
+        cout << "No sentence acquired yet." << endl;
+        return;
+    }
+
     printTree(onlyFoundOccurrencesVet[onlyFoundOccurrencesDim-1], cout);
     cout << "\nDimensione prima della codifica (numero di bit): " << getSentenceDimBefore() << endl;
     cout << "Dimensione in bit dopo della codifica (numero di bit): " << getSentenceDimAfter(
@@ -46,6 +78,11 @@ void printOccurrencesOnTerminal() {
 }
 
 void printOccurrencesOnFile() {
+    if (onlyFoundOccurrencesDim == 0 || onlyFoundOccurrencesVet == nullptr) {
+        cout << "No sentence acquired yet." << endl;
+        return;
+    }
+
     ofstream of("output.txt", ios::out);
 
     printTree(onlyFoundOccurrencesVet[onlyFoundOccurrencesDim-1], of);
@@ -67,6 +104,11 @@ void countOccurrences(const string& frase) {
             allPossibleOccurrencesVet[cod] = new Occurrence{i, 1, nullptr, nullptr, nullptr, ""};
         }
         else allPossibleOccurrencesVet[cod]->count++;
+    }
+
+    if (onlyFoundOccurrencesDim == 0) {
+        onlyFoundOccurrencesVet = nullptr;
+        return;
     }
 
     setOnlyOccurrencesVet();
@@ -95,6 +137,13 @@ void orderOnlyOccurrencesVet(int start, int end) {
 }
 
 void createTree() {
+    if (onlyFoundOccurrencesDim == 0 || onlyFoundOccurrencesVet == nullptr) return;
+
+    if (onlyFoundOccurrencesDim == 1) {
+        onlyFoundOccurrencesVet[0]->path = "0";
+        return;
+    }
+
     int first, second, dim = onlyFoundOccurrencesDim, start=0;
 
     do{

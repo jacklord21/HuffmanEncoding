@@ -5,7 +5,7 @@
 #ifndef HuffmanEncoding_HUFFMANFUNCTIONS_H
 #define HuffmanEncoding_HUFFMANFUNCTIONS_H
 
-#define NUM_MAX_CARATTERI 128
+#define NUM_MAX_CARATTERI 256
 
 #include <string>
 using namespace std;
